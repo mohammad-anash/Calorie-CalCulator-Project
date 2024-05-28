@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calorie Calculator Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="w-full h-screen bg-[#E0E0E0] flex justify-center items-center">
+    <div id="content" class="content w-2/4 h-2/2 rounded-md p-3 bg-[#F5F5F5]">
+      <h1 class="text-center m-2">Calorie Calculator Project</h1>
+      <div class="age flex justify-between m-1">
+        <label class="text-xs">Age</label>
+        <input
+          type="text"
+          id="age"
+          class="rounded-sm w-3/4 p-[2px] text-xs border-[1px] border-gray-300 outline-none placeholder:text-xs placeholder:text-slate-400"
+        />
+      </div>
+      <div class="gender flex justify-between m-1">
+        <label class="text-xs">Gender</label>
+        <input
+          type="text"
+          id="gender"
+          class="rounded-sm w-3/4 p-[2px] text-xs border-[1px] border-gray-300 outline-none placeholder:text-xs placeholder:text-slate-400"
+        />
+      </div>
+      <div class="weight flex justify-between m-1">
+        <label class="text-xs">Weight</label>
+        <input
+          type="text"
+          id="weight"
+          class="rounded-sm w-3/4 p-[2px] text-xs border-[1px] border-gray-300 outline-none placeholder:text-xs placeholder:text-slate-400"
+        />
+      </div>
+      <div class="height flex justify-between m-1">
+        <label class="text-xs">Height</label>
+        <input
+          type="text"
+          id="height"
+          class="rounded-sm w-3/4 p-[2px] text-xs border-[1px] border-gray-300 outline-none placeholder:text-xs placeholder:text-slate-400"
+        />
+      </div>
+      <div class="Activity-container flex justify-between m-1">
+        <label class="text-xs">Activity</label>
+        <select id="select-option" class="text-[10px] w-[260px] outline-none">
+          <option>Sedentary (little or no exercise): 1.2</option>
+          <option>
+            Lightly active (light exercise/sports 1-3 days/week): 1.375
+          </option>
+          <option>
+            Moderately active (moderate exercise/sports 3-5 days/week): 1.55
+          </option>
+          <option>
+            Very active (hard exercise/sports 6-7 days a week): 1.725
+          </option>
+          <option>
+            Super active (very hard exercise/sports & physical job): 1.9
+          </option>
+        </select>
+      </div>
+      <div class="button-div flex justify-center items-center my-3">
+        <button
+          id="btn"
+          class="bg-blue-500 px-2 py-1 text-white text-xs rounded-sm"
+        >
+          Calculate
+        </button>
+      </div>
+      <p id="result" class="text-xs text-center"></p>
+    </div>
+  </body>
+  <script src="js/index.js"></script>
+</html>
